@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/your-username/devops-project.git'
-            }
-        }
-
         stage('Check Docker') {
             steps {
                 sh 'docker --version'
